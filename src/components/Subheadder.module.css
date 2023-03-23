@@ -1,0 +1,15 @@
+.subheadder {
+
+    width: 100%;
+    height: 40px;
+    background-color: #36475b;
+    display: flex;
+     align-items: center;
+     justify-content: space-around;
+     color: white;
+}
+
+.links {
+    text-decoration: none;
+    color: white;
+}

@@ -1,0 +1,98 @@
+.header {
+    width: 100%;
+    background-color:RGB(19 25 33);
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    max-height: 50px;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    
+}
+
+.header__logo {
+    width: 100px;
+    margin: 0 20px;
+    margin-top: 10px;
+}
+
+.header__leftside {
+    width: 10%;
+}
+
+.header__searchbar {
+    width: 60%;
+    
+    min-width: 60%;
+}
+
+.header__searchbarinput {
+    width: 70%;
+    height: 10px;
+    margin-left: 100px;
+    padding: 10px;
+    border: none;
+    /* border-bottom-left-radius: 5px;
+   border-top-left-radius: 5px; */
+    border-radius: 5px;
+
+}
+
+.header__searchbarbutton {
+    height: 30px;
+    border: none;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    color: white;
+    background-color: orange;
+
+}
+
+.header__rightside {
+    width: 30%;
+    display: flex;
+    color: white; 
+    justify-content: space-evenly;
+    max-height: 50px;
+    overflow-y: hidden;
+    min-width: 20px;
+ 
+}
+
+.header__rightsidelinks {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    /* margin: 0 10px; */
+}
+
+.header__rightsidelinksPrimary {
+    font-size: 12px;
+}
+
+.header__cart {
+
+}
+
+.header__carticon {
+    width: 1.35rem;
+    height: 1.35rem;
+    margin-right: 0.5rem;
+  }
+  .header__cartbutton {
+    cursor: pointer;
+    font: inherit;
+    border: none;
+ 
+    color: white;
+    background-color: rgb(20, 18, 18);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   margin-top: 5px;
+    font-weight: bold;
+  }
+  
