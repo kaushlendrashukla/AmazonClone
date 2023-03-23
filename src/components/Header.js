@@ -1,16 +1,16 @@
 
-import React, {useContext} from 'react'
+import React, { useContext } from 'react'
 import { Link } from 'react-router-dom'
+import CartContext from '../Store/Cart-context'
 import CartIcon from './CartIcon'
 import "./Header.css"
-import CartContext from '../Store/Cart-context'
 
 
 
 function Header() {
-const cartCtx =  useContext(CartContext)
-const numberOfCartItem = cartCtx.items.length;
+const cartCtx  =  useContext(CartContext)
 
+const numberOfItems = cartCtx.items.length;
     return (
         <nav className='header'>
             <div className='header__leftside'>
@@ -43,10 +43,10 @@ const numberOfCartItem = cartCtx.items.length;
                 <div>
                     <button className="header__cartbutton" >
                         <span className="header__carticon">
-                            <CartIcon />
+                         <Link to=  "/cart">   <CartIcon /> </Link>
                         </span>
                         {/* <span> Cart</span> */}
-                        <span className="badge"> {numberOfCartItem} </span>
+                        <span className="badge"> {numberOfItems} </span>
                     </button>
                 </div>
             </div>

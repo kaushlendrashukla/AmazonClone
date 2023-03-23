@@ -5,7 +5,7 @@ import Header from "./components/Header";
 import Cart from "./pages/Cart";
 import Login from "./pages/Login";
 import SubHeadder from "./components/Subheadder";
-import CartProvider from "./Store/cartProvider";
+
 
 const App = () => {
   
