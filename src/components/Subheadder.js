@@ -1,7 +1,11 @@
 import { Link } from "react-router-dom"
 import classes from "./Subheadder.module.css"
+import AuthContext from "../Store/AuthContext"
+import { useContext } from "react"
 
 const SubHeadder = () => {
+const authCtx = useContext(AuthContext)
+
 
     return <div className={classes.subheadder}>
           <Link to="/" className={classes.links}>Home</Link>
