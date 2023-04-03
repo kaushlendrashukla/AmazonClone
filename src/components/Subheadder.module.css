@@ -13,3 +13,17 @@
     text-decoration: none;
     color: white;
 }
+
+.butt {
+    
+        background-color: #36475b; /* Green */
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 4px;
+      }

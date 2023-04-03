@@ -16,7 +16,7 @@ const App = () => {
   return<BrowserRouter>
   
     <Routes>
-
+   
       <Route path="/" element={          
        <>
        <Header />
@@ -25,7 +25,8 @@ const App = () => {
        </>
       } /> 
       <Route path="/login" element={<Login />} />
-      <Route path="/cart" element={<Cart />} />
+      {/* <Route path="/cart" element={<Cart />} /> */}
+      <Route path="cart" element={authCtx.isLoggedIn ? <Cart /> : <Navigate to="/login" replace />} />
     </Routes>
   </BrowserRouter>
  

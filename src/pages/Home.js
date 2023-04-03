@@ -1,25 +1,29 @@
-import React from 'react'
+
+import React ,{useEffect, useState} from 'react'
 import "./Home.css"
 import Product from './Product'
 
 function Home() {
 
-  // const imageChanger = () => {
+  const [carousel , setCarousel] = useState(1)
 
-  //   useEffect(() => {
-  //     setInterval(()=> {},3000)
-    
-  //     return () => {
-  //       second
-  //     }
-  //   }, [])
-    
-  // }
-  const num = 2;
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      if (carousel <= 2) {
+        setCarousel((prev) => prev + 1);
+      } else {
+        setCarousel(1); 
+      }
+      console.log('carousel:', carousel);
+    }, 3000);
+  
+    return () => clearInterval(intervalId);
+  }, [carousel]);
 
   return (
     <div className='home'>
-      <img className='home__carouselimg' src={`./images/carousel${num}.jpg`} alt="carousel" />
+      <img className='home__carouselimg' src={`./images/carousel${carousel}.jpg`} alt="carousel" />
       <div className='home__row'>
       <Product
       key={123451}
