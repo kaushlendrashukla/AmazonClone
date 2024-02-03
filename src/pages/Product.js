@@ -1,7 +1,7 @@
 import React, {useContext} from 'react'
 import "./Product.css"
 import CartContext from '../Store/Cart-context';
-import Cart from './Cart';
+
 
 function Product({id, title, image, price, rating}) {
  const cartCtx  = useContext(CartContext)
@@ -15,9 +15,9 @@ function Product({id, title, image, price, rating}) {
     })
  }
 
-const removeToCartHandler = id => {
-    cartCtx.removeItem({id})
-}
+// const removeToCartHandler = id => {
+//     cartCtx.removeItem({id})
+// }
     return (
         <div className='product'>
             <div className='product__container' >
@@ -25,7 +25,7 @@ const removeToCartHandler = id => {
             <p className='product__price'>{`₹ ${price}`}</p>
             <div className='product__rating'>
                 {
-                    Array(rating).fill().map((_) => <p>⭐</p>)
+                    Array(rating).fill().map(( ) => <p>⭐</p>)
                 }
             </div>
             </div>

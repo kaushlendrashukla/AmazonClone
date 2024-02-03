@@ -1,9 +1,12 @@
 import classes from "./SubFooter.module.css";
 
+
 const SubFooter = () => {
+   
+    
 
     return <div className={classes.container}>
-        <div className={classes.backtotop}>Back To Top</div>
+        <div className={classes.backtotop}  >Back To Top</div>
         <div className={classes.items}>
             <div className={classes.linkcoloumn}>
                 <h4>Get to Know Us</h4>

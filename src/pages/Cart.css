@@ -16,8 +16,31 @@ margin-bottom: 50px;
 text-align: right;
 font-size:large;
 font-weight: bolder;
+display: flex;
+float: right;
+align-items: center;
+justify-content: center;
+flex-direction: column;
 }
 
 .cart__checkoutproducts {
 
 }
+.cart__orderbutton {
+    background-color:rgb(254,217,20);
+    margin : 5px 0px;
+    border: 1px solid black;
+    border: none;
+    border-radius: 20px;
+    align-items: center;
+    padding: 10px;
+    width: 20%;
+    
+}
+
+.cart__checkoutprice span {
+   cursor: pointer;
+  }
+  .cart__checkoutprice > span:hover{
+    color: red;
+  }
