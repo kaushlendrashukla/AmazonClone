@@ -81,6 +81,7 @@
     width: 1.35rem;
     height: 1.35rem;
     margin-right: 0.5rem;
+   fill: rgb(224, 209, 209);
   }
   .header__cartbutton {
     cursor: pointer;
@@ -94,5 +95,13 @@
     align-items: center;
    margin-top: 5px;
     font-weight: bold;
+  }
+  
+  @media (max-width: 767px) {
+    .header__rightsidelinks {
+      display: none;
+    }
+
+
   }
   

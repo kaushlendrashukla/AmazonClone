@@ -1,7 +1,23 @@
+.cart {
+    /* display: flex; */
+}
 .cart__img {
     width:80%;
     height: 80px;
     margin-bottom: 10px;
     object-fit: cover;
    
+}
+
+.cart__checkoutprice {
+width: 80%;
+margin-top: 25px;
+margin-bottom: 50px;
+text-align: right;
+font-size:large;
+font-weight: bolder;
+}
+
+.cart__checkoutproducts {
+
 }
