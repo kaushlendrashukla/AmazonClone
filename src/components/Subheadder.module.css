@@ -27,3 +27,11 @@
         cursor: pointer;
         border-radius: 4px;
       }
+      @media screen and (max-width: 768px) {
+        .subheadder a:nth-of-type(2),
+        .subheadder a:nth-of-type(3),
+        .subheadder a:nth-of-type(4) {
+          display: none;
+        }
+      }
+      

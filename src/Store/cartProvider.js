@@ -18,15 +18,17 @@ const cartReducer = (state, action) => {
   }
 
   else if (action.type === "REMOVE") {
-
+    
     let updatesvalue = state.items.filter((i) =>{
     
       return i.id != action.id.id
     })
-
+let newupdatedamount = updatesvalue.reduce((acc,num)=>{
+  return acc + num.price
+}, 0)
     return {
       items:updatesvalue,
-     
+      totalAmount:newupdatedamount
     }
   }
 

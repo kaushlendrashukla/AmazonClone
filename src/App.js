@@ -7,6 +7,8 @@ import Login from "./pages/Login";
 import SubHeadder from "./components/Subheadder";
 import AuthContext from "./Store/AuthContext";
 import { useContext } from "react";
+import Footer from "./components/Footer";
+import SubFooter from "./components/SubFooter";
 
 
 const App = () => {
@@ -22,6 +24,8 @@ const App = () => {
        <Header />
        <SubHeadder />
        <Home />
+       <SubFooter />
+       <Footer />
        </>
       } /> 
       <Route path="/login" element={<Login />} />

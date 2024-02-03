@@ -22,19 +22,19 @@ const numberOfItems = cartCtx.items.length;
             </div>
             <div className='header__rightside'>
                 <div>
-                    <Link to="/home" className='header__rightsidelinks'>
+                    <Link to="/" className='header__rightsidelinks'>
                         <span className='header__rightsidelinksPrimary'>hello shukla</span>
                         <span>Sign In</span>
                     </Link>
                 </div>
                 <div>
-                    <Link to="/home" className='header__rightsidelinks'>
+                    <Link to="/" className='header__rightsidelinks'>
                         <span className='header__rightsidelinksPrimary'>Returns</span>
                         <span>& Orders</span>
                     </Link>
                 </div>
                 <div>
-                    <Link to="/home" className='header__rightsidelinks'>
+                    <Link to="/" className='header__rightsidelinks'>
                         <span className='header__rightsidelinksPrimary'>Your</span>
                         <span>Prime</span>
                     </Link>
